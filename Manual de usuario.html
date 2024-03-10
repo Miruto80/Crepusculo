@@ -7,7 +7,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="imagenes/Icono.png">
     <title>Manual de Usuario - Buen Uso y Mantenimiento del Computador</title>
     <style>
-	* {
+		* {
     text-align: justify;
 }
 
@@ -17,6 +17,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #e6e6e6;
+	 min-height: 100vh; /* Esto establece la altura mínima del cuerpo al 100% de la altura visible del dispositivo */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
 }
 
 header {
@@ -79,11 +81,11 @@ main {
 }
 
 img {
-    display: block;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    max-width: 100%; /* Hacer que las imágenes sean responsivas */
+    margin-top: 10px; /* Puedes ajustar el espacio superior de las imágenes en dispositivos móviles */
+    margin-bottom: 10px; /* Puedes ajustar el espacio inferior de las imágenes en dispositivos móviles */
 }
 
 .centrar_texto {
@@ -117,7 +119,8 @@ cite {
 
 /* Estilos para pantallas medianas y pequeñas */
 @media screen and (max-width: 767px) {
-    body {
+    
+body {
         padding-top: 70px; /* Ajusta el espacio en la parte superior para el header fijo */
     }
 
@@ -141,7 +144,7 @@ cite {
     .imagen {
         margin-bottom: 20px;
     }
-	    main {
+     main {
         padding: 10px; /* Ajusta el relleno para mejorar la visualización en dispositivos móviles */
     }
 
@@ -152,9 +155,7 @@ cite {
 
     .Enlaces a {
         margin-bottom: 10px; /* Agrega espacio entre los enlaces */
-    }
-}
-		
+    }		
     </style>
 </head>
 
