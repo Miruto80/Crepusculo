@@ -77,7 +77,6 @@ header nav {
 	text-align:center;
 	background: #333;
 	overflow: hidden;
-	overflow-x: auto;
 	box-sizing: border-box; 
 }
 
@@ -265,7 +264,7 @@ h4 {
         display: flex;
         flex-direction: column;
         align-items: center;
-		margin:0px;
+		margin:0;
     }
 
     header nav ul li {
@@ -280,5 +279,4 @@ h4 {
         margin-left: 0;
     }
 }
-
 
