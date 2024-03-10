@@ -23,7 +23,7 @@ header {
 	color: white;
 	text-align: center;
 	padding: 1em;
-	margin-left:0px;
+	margin-left:0;
 	top: 0;
 	position: fixed;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -132,7 +132,7 @@ article p {
 	border-radius: 8px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-/* Elimina este corchete adicional que estaba aquí }*/
+
 
 .caja_verde {
 	text-align: center;
@@ -206,11 +206,15 @@ h4 {
 	}
 
 	header nav {
-		margin-left: 0;
+		margin:0;
 	}
    header nav ul {
         margin: 0;
 		flex-direction: column;
+		 align-items: center;
+    }
+	header nav ul li {
+        margin: 10px 0;
     }
 	
 	.contenedor {
@@ -259,8 +263,8 @@ h4 {
     }
 
     header nav {
-        margin: 10px auto;
-    }
+ margin: 10px auto;    
+ }
 
     header nav ul {
         display: flex;
@@ -268,7 +272,7 @@ h4 {
         align-items: center;
 		margin:0;
 		width: 100%;
-	    max-width: 100%;
+		max-width: 100%;
     }
 
     header nav ul li {
@@ -283,5 +287,4 @@ h4 {
         margin-left: 0;
     }
 }
-
 
