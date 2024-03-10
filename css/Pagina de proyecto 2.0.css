@@ -207,7 +207,11 @@ h4 {
 	header nav {
 		margin-left: 0;
 	}
-
+   header nav ul {
+        margin: 0;
+		flex-direction: column;
+    }
+	
 	.contenedor {
 		flex-direction: column;
 		text-align: center;
@@ -276,4 +280,5 @@ h4 {
         margin-left: 0;
     }
 }
+
 
