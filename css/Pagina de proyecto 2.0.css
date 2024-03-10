@@ -77,6 +77,7 @@ header nav {
 	text-align:center;
 	background: #333;
 	overflow: hidden;
+	overflow-x: auto;
 }
 
 header nav ul {
@@ -90,6 +91,7 @@ header nav ul {
 
 header nav ul li {
 	float: left;
+	margin: 0 10px;
 }
 
 header nav ul li a {
