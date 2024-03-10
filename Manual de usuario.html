@@ -7,109 +7,157 @@
 	<link rel="shortcut icon" type="image/x-icon" href="imagenes/Icono.png">
     <title>Manual de Usuario - Buen Uso y Mantenimiento del Computador</title>
     <style>
-	*{
-	text-align:justify
-	}
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #e6e6e6;
-        }
+	* {
+    text-align: justify;
+}
 
-        header {
-            background-color: #555;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6e6;
+}
 
-        h1 {
-            margin-bottom: 20px;
-        }
+header {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
 
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-		.contenedor{
-		justify-content: space-between; 
-         align-items: center;
-		display: flex;
-	}
-	.imagen{
-		height:120px; 
-		width: 120px;
-		margin-left:0px;
-	}
-	.Texto{
-	text-align:center;
-	margin:auto;
-	margin-right:560px;
-	}
+.contenedor {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
 
-        h2 {
-            color:black;
-        }
+.imagen {
+    height: 120px;
+    width: 120px;
+    margin-left: 0px;
+}
 
-        section {
-            margin-bottom: 30px;
-        }
+.Texto {
+    text-align: center;
+    margin: auto;
+    margin-right: 560px;
+}
 
-        p {
-            margin-bottom: 15px;
-        }
+h1 {
+    margin-bottom: 20px;
+}
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        li {
-            margin-bottom: 10px;
-        }
-		
-		img{
-		display: block;
-            margin: 0 auto; 
-            margin-top: 20px;
-			margin-bottom:20px;
-		}
-		.Enlaces{
-		display:flex;
-			float:left;
-		}
-		.Enlaces a{
-		text-decoration:none;
-		color:black;
-		transition: color 0.3s ease;
-		}
-		.Enlaces a:hover{
-		color: #ffd700;
-		}
-		.Enlaces li{
-		margin-right:20px;
-		}
-        
-		.centrar_texto {
-      text-align: center;
-      margin: 20px 0;
+.Enlaces {
+    display: flex;
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Enlaces a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.Enlaces a:hover {
+    color: #ffd700;
+}
+
+.Enlaces li {
+    margin-right: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%; /* Hacer que las imágenes sean responsivas */
+}
+
+.centrar_texto {
+    text-align:center;
+    margin: 20px 0;
+}
+
+.centrar_texto a {
+display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+   text-decoration:none;
+}
+.centrar_texto a:hover{
+color: #ffd700;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+}
+
+cite {
+    margin-left: 500px;
+}
+
+/* Estilos para pantallas medianas y pequeñas */
+@media screen and (max-width: 767px) {
+    .Texto {
+        margin-right: 0;
     }
-	
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-			width:100%;
-        }
-		cite{
-		margin-left:500px;
-		}
+
+    .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen {
+        margin-bottom: 20px;
+    }
+
+    header nav {
+        margin-left: 0;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .redes-sociales {
+        flex-direction: column;
+    }
+
+    .redes-sociales a {
+        margin-bottom: 10px;
+    }
+}
 		
     </style>
 </head>
