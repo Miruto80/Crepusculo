@@ -80,11 +80,22 @@ textarea{
 .boton:hover {
   background:#ffd700;
 }
+.centrar_texto {
+      text-align: center;
+      margin: 20px 0;
+	  list-style:none;
+	cursor:pointer;
+    }
 
 footer{
 	text-align:center;
 	margin-top:115px;
 	width:100%;
+	background:#f79324;
+	color:black;
+	padding:10px 0px;
+}
+
 	background:#f79324;
 	color:black;
 	padding:10px 0px;
