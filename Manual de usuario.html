@@ -106,18 +106,19 @@ margin-bottom:10px;
 }
 
 .centrar_texto {
-    text-align:center;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .centrar_texto a {
-display: inline-block;
-    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 10px;
     background-color: #333;
     color: #fff;
     border-radius: 5px;
     transition: background-color 0.3s ease;
    text-decoration:none;
+   text-align:center;
 }
 .centrar_texto a:hover{
 color: #ffd700;
@@ -140,7 +141,8 @@ cite {
 
 /* Estilos para dispositivos pequeños (dispositivos móviles) */
 @media screen and (max-width: 767px) {
-	body, html {
+   
+    body, html {
         margin: 0;
         padding: 0;
         overflow-x: hidden; /* Añade esta propiedad para evitar el desplazamiento horizontal */
@@ -159,16 +161,19 @@ cite {
         width: 100%;
         padding: 1em;
         box-sizing: border-box;
+		justify-content: center;
     }
 
     .imagen {
         height: auto;
         width: 80%;
         max-width: 200px;
-        margin: 0 auto; /* Centra la imagen */
-        margin-right: 0; /* Elimina el margen derecho */
+        margin: 0 auto; 
+        margin-right: 0; 
     }
-
+     .Texto {
+        text-align: center; 
+    }
     main {
         width: 100%;
         box-sizing: border-box;
@@ -183,6 +188,10 @@ cite {
     .centrar_texto {
         text-align: center;
         margin: 20px 10px;
+    }
+	.centrar_texto a {
+        display: block;
+        margin: 0 auto;
     }
 }
     
