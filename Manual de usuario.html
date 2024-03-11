@@ -128,16 +128,21 @@ footer {
     color: #fff;
     padding: 10px 0;
     width: 100%;
+	margin-top: 20px
 }
 
 cite {
-    margin-left: 500px;
+     margin-left: auto;
+    margin-right: auto;
+    display: table;
 }
 
 
 /* Estilos para dispositivos pequeños (dispositivos móviles) */
 @media screen and (max-width: 767px) {
-    header {
+     
+	 
+	 header {
         width: 100%;
         box-sizing: border-box;
     }
@@ -150,11 +155,12 @@ cite {
     }
 
     .imagen {
-        height: auto;
+       height: auto;
         width: 80%;
         max-width: 200px;
-        margin: 0 auto;
         display: block;
+        margin-right: 0; /* Elimina el margen derecho en dispositivos móviles */
+        margin-left: auto; 
     }
 
     .Texto {
@@ -172,13 +178,13 @@ cite {
     }
 
     .Enlaces {
+	    display:block;
         margin-top: 10px;
     }
 
     .centrar_texto {
         margin: 20px auto;
     }
-}
     
     </style>
 </head>
