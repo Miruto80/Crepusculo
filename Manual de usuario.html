@@ -18,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #e6e6e6;
-	 min-height: 100vh; 
+	 min-height: 100vh; /* Esto establece la altura mínima del cuerpo al 100% de la altura visible del dispositivo */
 	overflow-x: hidden;
 }
 
@@ -27,7 +27,7 @@ header {
     color: #fff;
     text-align: center;
     padding: 1em 0;
-	width: 100%;
+	width: 100%; /* Añade esta línea para ocupar el 100% del ancho en dispositivos móviles */
     box-sizing: border-box;
 }
 
@@ -51,7 +51,7 @@ header {
 
 .Texto {
     text-align: center;
-    flex-grow: 1; 
+    flex-grow: 1; /* Ajusta el crecimiento del contenedor de texto para ocupar el espacio restante */
 }
 
 .Texto h1 {
@@ -67,8 +67,6 @@ main {
     margin: 0 auto; /* Centrado horizontalmente */
     padding: 0 10px;
 }
-
-section
 
 .Enlaces {
     display: flex;
@@ -96,8 +94,8 @@ img {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px; 
+    margin-top: 10px; /* Puedes ajustar el espacio superior de las imágenes en dispositivos móviles */
+    margin-bottom: 10px; /* Puedes ajustar el espacio inferior de las imágenes en dispositivos móviles */
 	text-align:center;
 }
 
@@ -184,11 +182,18 @@ cite {
         margin-top: 10px;
         text-align: center;
     }
+	
+     section li{
+     margin-right:10px;
+     }
 
     .centrar_texto {
         text-align: center;
         margin: 20px 10px;
     }
+	img{
+	margin-right:10px;
+	}
 	.centrar_texto a {
         display: block;
         margin: 0 auto;
