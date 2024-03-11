@@ -30,35 +30,40 @@ header {
 }
 
 .contenedor {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    display: flex;
-	width: 100%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .imagen {
     height: 120px;
     width: 120px;
-    margin-left: 0px;
+	margin-right:350px;
+	margin-left:0;
 }
 
 .Texto {
     text-align: center;
-    margin: auto;
-    margin-right:0;
+    flex-grow: 1; /* Ajusta el crecimiento del contenedor de texto para ocupar el espacio restante */
 }
 
-h1 {
-    margin-bottom: 20px;
+.Texto h1 {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
 }
-
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	width:100%;
+	width: 90%; /* Cambiado el ancho a 90% */
+    max-width: 1200px; /* Establecido un ancho máximo */
+    margin: 0 auto; /* Centrado horizontalmente */
+    padding: 0 10px;
 }
 
 .Enlaces {
@@ -79,16 +84,13 @@ main {
     color: #ffd700;
 }
 
-.Enlaces li {
-    margin-right: 20px;
-}
-
 img {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
     margin-top: 10px; /* Puedes ajustar el espacio superior de las imágenes en dispositivos móviles */
     margin-bottom: 10px; /* Puedes ajustar el espacio inferior de las imágenes en dispositivos móviles */
+	text-align:center;
 }
 
 .centrar_texto {
@@ -126,22 +128,26 @@ cite {
    body {
         width: 100%;
         padding-top: 70px; /* Ajusta el espacio en la parte superior para el header fijo */
-	margin-left:40%;
+		margin-left:40%;
+		 padding: 1em 10px;
     }
 
     header {
         position: static;
 		width:100%;
     }
+	.Texto {
+		 text-align: center;
+    }
 
     .contenedor {
         flex-direction: column;
         align-items: center;
-	    width:100%;
+		width:100%;
     }
 
     .Enlaces {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .centrar_texto {
@@ -157,8 +163,8 @@ cite {
     }
 
     img {
-        max-width: 100%; /* Asegura que las imágenes no excedan el ancho de la pantalla */
-        height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .Enlaces a {
