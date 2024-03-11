@@ -140,11 +140,10 @@ cite {
 
 /* Estilos para dispositivos pequeños (dispositivos móviles) */
 @media screen and (max-width: 767px) {
-     
-	 
-	 header {
+     header {
         width: 100%;
         box-sizing: border-box;
+        margin: 0; /* Elimina los márgenes en dispositivos móviles */
     }
 
     .contenedor {
@@ -155,36 +154,29 @@ cite {
     }
 
     .imagen {
-       height: auto;
+        height: auto;
         width: 80%;
         max-width: 200px;
-        display: block;
-        margin-right: 0; /* Elimina el margen derecho en dispositivos móviles */
-        margin-left: auto; 
-    }
-
-    .Texto {
-        text-align: center;
-        margin-top: 10px; /* Añade espacio entre la imagen y el texto */
+        margin: 0 auto; /* Centra la imagen */
+        margin-right: 0; /* Elimina el margen derecho */
     }
 
     main {
         width: 100%;
         box-sizing: border-box;
+        padding: 10px; /* Ajusta el relleno para mejorar la visualización */
     }
 
-    section {
-        padding: 20px; /* Ajusta el relleno para mejorar la visualización en dispositivos móviles */
-    }
-
-    .Enlaces {
-	    display:block;
-        margin-top: 10px;
+    section.Enlaces {
+        margin-top: 10px; /* Ajusta el margen superior para evitar que se salga del main */
+        text-align: center; /* Centra los enlaces */
     }
 
     .centrar_texto {
-        margin: 20px auto;
+        text-align: center;
+        margin: 20px 10px; /* Ajuste del margen */
     }
+}
     
     </style>
 </head>
