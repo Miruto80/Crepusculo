@@ -27,6 +27,8 @@ header {
     color: #fff;
     text-align: center;
     padding: 1em 0;
+	width: 100%; /* Añade esta línea para ocupar el 100% del ancho en dispositivos móviles */
+    box-sizing: border-box;
 }
 
 .contenedor {
@@ -66,6 +68,8 @@ main {
     padding: 0 10px;
 }
 
+section
+
 .Enlaces {
     display: flex;
     float: left;
@@ -84,6 +88,10 @@ main {
     color: #ffd700;
 }
 
+.Enlaces li {
+    margin-right: 20px;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -91,6 +99,10 @@ img {
     margin-top: 10px; /* Puedes ajustar el espacio superior de las imágenes en dispositivos móviles */
     margin-bottom: 10px; /* Puedes ajustar el espacio inferior de las imágenes en dispositivos móviles */
 	text-align:center;
+}
+
+section li{
+margin-bottom:10px;
 }
 
 .centrar_texto {
@@ -122,55 +134,22 @@ cite {
     margin-left: 500px;
 }
 
-/* Estilos para pantallas medianas y pequeñas */
+
+/* Estilos para dispositivos pequeños (dispositivos móviles) */
 @media screen and (max-width: 767px) {
-    
-   body {
-        width: 100%;
-        padding-top: 70px; /* Ajusta el espacio en la parte superior para el header fijo */
-		margin-left:40%;
-		 padding: 1em 10px;
-    }
-
     header {
-        position: static;
-		width:100%;
-    }
-	.Texto {
-		 text-align: center;
+        width: 100%;
+        box-sizing: border-box;
     }
 
-    .contenedor {
-        flex-direction: column;
-        align-items: center;
-		width:100%;
-    }
-
-    .Enlaces {
-        margin-top: 10px;
-    }
-
-    .centrar_texto {
-        margin: 20px auto;
+    .imagen {
+        height: auto;
+        width: 80%;
+        max-width: 200px;
+        margin: 0 auto;
+        display: block;
     }
 }
-    .imagen {
-        margin-bottom: 20px;
-    }
-     main {
-        padding: 10px; /* Ajusta el relleno para mejorar la visualización en dispositivos móviles */
-		width:100%;
-    }
-
-    img {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .Enlaces a {
-        margin-bottom: 10px; /* Agrega espacio entre los enlaces */
-    }
-    
     
     </style>
 </head>
