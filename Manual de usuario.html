@@ -9,6 +9,7 @@
     <style>
 		* {
     text-align: justify;
+	box-sizing: border-box;
 }
 
 body {
@@ -57,7 +58,7 @@ main {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width:100%;
+	width:100%;
 }
 
 .Enlaces {
@@ -122,13 +123,14 @@ cite {
 /* Estilos para pantallas medianas y pequeñas */
 @media screen and (max-width: 767px) {
     
-body {
+   body {
+        width: 100%;
         padding-top: 70px; /* Ajusta el espacio en la parte superior para el header fijo */
     }
 
     header {
         position: static;
-	    width:100%;
+		width:100%;
     }
 
     .contenedor {
@@ -149,7 +151,7 @@ body {
     }
      main {
         padding: 10px; /* Ajusta el relleno para mejorar la visualización en dispositivos móviles */
-	     width:100%;
+		width:100%;
     }
 
     img {
@@ -160,6 +162,7 @@ body {
     .Enlaces a {
         margin-bottom: 10px; /* Agrega espacio entre los enlaces */
     }
+    
     
     </style>
 </head>
