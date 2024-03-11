@@ -140,7 +140,11 @@ cite {
 
 /* Estilos para dispositivos pequeños (dispositivos móviles) */
 @media screen and (max-width: 767px) {
-     header {
+     body {
+        overflow-x: hidden; /* Agrega esta propiedad para evitar el desplazamiento horizontal en dispositivos móviles */
+    }
+
+    header {
         width: 100%;
         box-sizing: border-box;
         margin: 0; /* Elimina los márgenes en dispositivos móviles */
