@@ -16,6 +16,7 @@ body {
 }
 
 header {
+	position: sticky;
 	background: url(../imagenes/cre.PNG);
 	background-repeat: no-repeat;
 	background-size: cover;
